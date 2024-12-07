@@ -15,7 +15,7 @@ Your task is to simulate the execution of the algorithm for a given value of `n`
 The only input line contains an integer `n`.
 
 ### Constraints:
-- \(1 \leq n \leq 10^6\)
+- $\(1 \leq n \leq 10^6\)$
 
 ## Output
 
@@ -35,5 +35,5 @@ Print a line that contains all values of `n` during the algorithm.
 ### Notes:
 
 - The algorithm should print all intermediate values of `n` during the process, ending with `1`.
-- Ensure the solution runs efficiently for input values as large as \(10^6\).
+- Ensure the solution runs efficiently for input values as large as $\(10^6\)$.
 
