@@ -3,17 +3,28 @@ using namespace std;
 
 class Solution{
     public:
-    
-    void solve(vector<int> & nums){
-        int n = nums.size();
-        int xr = 0;
-        for(int i = 1; i <= n + 1; i++){
-            xr = xr^i;
+    void solve(string str){
+        if(str.empty()){ // handeling edge case 
+            cout << 0 << endl;
+            return;
         }
-        for(int num:nums){
-            xr = xr^num;
+
+        int maxRun = 1;
+        int currentRun = 1;
+        char cur = str[0];
+
+        for(int i = 1; i < str.size(); i++){
+            if(cur == str[i]){
+                currentRun++;
+                maxRun = max(maxRun, currentRun);
+            }
+            else{
+                cur = str[i];
+                currentRun = 1;
+            }
         }
-        cout<<xr<<endl;
+
+        cout << maxRun << endl;
     }
 };
 
@@ -33,12 +44,9 @@ int main(){
 //   resulting in faster overall I/O.
 
     Solution solution;
-    int t = 0;
-    cin>>t;
-    vector<int> arr(t-1);
-    for(int i=0; i<t-1; i++){
-        cin>>arr[i];
-    }
-    solution.solve(arr);
+    string s;
+    cin >> s;
+    solution.solve(s);
+
     return 0;
 }
