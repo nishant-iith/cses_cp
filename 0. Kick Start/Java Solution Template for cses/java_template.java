@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class java_template {
     public static void main(String[] args) {
         FastReader in = new FastReader();
         PrintWriter out = new PrintWriter(System.out);
