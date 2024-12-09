@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#pragma GCC optimize("Ofast,unroll-loops")
-#pragma GCC target("avx,avx2,avx512,fma")
+// - One Big Print: Using std::ostringstream accumulates all output in memory,
+//   and prints it once at the end, greatly reducing I/O overhead.
+// while strong using out and while output use out.str()
 
 using ll = long long;
 using ld = long double;
