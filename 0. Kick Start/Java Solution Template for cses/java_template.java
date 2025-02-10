@@ -15,13 +15,36 @@ class Solution {
     private FastReader in;
     private PrintWriter out;
 
+    // Add commonly used constants
+    private final int MOD = 1_000_000_007;
+    private final int INF = Integer.MAX_VALUE;
+
     public Solution(FastReader in, PrintWriter out) {
         this.in = in;
         this.out = out;
     }
 
     public void solve() {
-        // Implement your solution logic here
+        int t = in.nextInt(); // Read number of test cases
+        while (t-- > 0) {
+            solveTestCase();
+        }
+    }
+
+    private void solveTestCase() {
+        // Implement single test case logic here
+    }
+
+    // Add commonly used helper methods
+    private long mod(long a, long m) {
+        return ((a % m) + m) % m;
+    }
+
+    private int[] readArray(int n) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
+            arr[i] = in.nextInt();
+        return arr;
     }
 }
 
